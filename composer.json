@@ -1,0 +1,15 @@
+{
+    "name": "francolin/mvc-framework",
+    "authors": [
+        {
+            "name": "Tajveez",
+            "email": "Tajveez786@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
