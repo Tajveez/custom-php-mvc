@@ -14,4 +14,9 @@ class Router
     {
         $this->routes['get'][$path] = $callback;
     }
+
+    public function resolve()
+    {
+        print_r($_SERVER);
+    }
 }
