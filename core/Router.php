@@ -17,7 +17,7 @@ class Router
         $this->request = $request;
     }
 
-    public function run($path, $callback)
+    public function get($path, $callback)
     {
         $this->routes['get'][$path] = $callback;
     }
