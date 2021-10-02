@@ -5,9 +5,16 @@ namespace app\core;
 class Router
 {
     protected $routes = [];
+    public $request;
 
-    public function __construct()
+    /**
+     * Router Constructor
+     *
+     * @param \app\core\Request $request
+     **/
+    public function __construct(Request $request)
     {
+        $this->request = $request;
     }
 
     public function run($path, $callback)
@@ -17,6 +24,6 @@ class Router
 
     public function resolve()
     {
-        print_r($_SERVER);
+        $this->request->getPath();
     }
 }
