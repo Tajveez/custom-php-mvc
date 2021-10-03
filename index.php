@@ -10,4 +10,8 @@ $app->router->get('/', function () {
     return "Hello World";
 });
 
+$app->router->get('/users', function () {
+    return "Hello Users";
+});
+
 $app->run();
