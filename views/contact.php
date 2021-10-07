@@ -1,5 +1,5 @@
 <h1>
     <?php
-    echo "Hello User";
+    echo "Hello User :)";
     ?>
 </h1>
