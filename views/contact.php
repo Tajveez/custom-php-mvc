@@ -1,5 +1,1 @@
-<h1>
-    <?php
-    echo "Hello User";
-    ?>
-</h1>
+<h1>Contact</h1>
