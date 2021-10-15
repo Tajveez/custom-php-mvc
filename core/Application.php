@@ -2,7 +2,7 @@
 
 namespace app\core;
 
-use Response;
+use app\core\Response;
 
 class Application
 {
