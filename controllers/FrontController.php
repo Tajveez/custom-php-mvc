@@ -11,6 +11,15 @@ class FrontController
         return "Handling action";
     }
 
+    public function renderHome()
+    {
+        $params = [
+            'name' => 'Francolin'
+        ];
+
+        return Application::$app->router->renderView('home', $params);
+    }
+
     public function renderContact()
     {
         return Application::$app->router->renderView('contact');
