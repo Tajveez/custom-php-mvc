@@ -13,6 +13,6 @@ $app = new Application(dirname(__DIR__));
 $app->router->get('/', 'home');
 
 $app->router->get('/contact', 'contact');
-$app->router->post('/contact', [FrontController::class]);
+$app->router->post('/contact', [FrontController::class, 'handlePost']);
 
 $app->run();

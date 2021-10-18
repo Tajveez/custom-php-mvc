@@ -8,4 +8,9 @@ class FrontController
     {
         return "Handling action";
     }
+
+    public function handlePost()
+    {
+        return "WHY SO SERIOUS?";
+    }
 }

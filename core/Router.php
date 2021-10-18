@@ -42,6 +42,7 @@ class Router
             return $this->renderView($callback);
         }
 
+        // appending default function
         if (is_array($callback) && count($callback) == 1) $callback[] = 'action';
 
         return call_user_func($callback);
