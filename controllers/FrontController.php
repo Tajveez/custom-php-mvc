@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 
 class FrontController extends Controller
 {
@@ -26,8 +27,11 @@ class FrontController extends Controller
         return $this->render('contact');
     }
 
-    public function handlePost()
+    public function handlePost(Request $request)
     {
+        echo "<pre>";
+        var_dump($request->getBodyParams());
+        echo "</pre>";
         return "WHY SO SERIOUS?";
     }
 }
