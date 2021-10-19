@@ -45,6 +45,9 @@ class Router
         // appending default function
         if (is_array($callback) && count($callback) == 1) $callback[] = 'action';
 
+        // Creating instance for class in array
+        if (is_array($callback)) $callback[0] = new $callback[0];
+
         return call_user_func($callback);
     }
 

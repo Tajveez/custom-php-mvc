@@ -3,8 +3,9 @@
 namespace app\controllers;
 
 use app\core\Application;
+use app\core\Controller;
 
-class FrontController
+class FrontController extends Controller
 {
     public function action()
     {
@@ -17,12 +18,12 @@ class FrontController
             'name' => 'Francolin'
         ];
 
-        return Application::$app->router->renderView('home', $params);
+        return $this->render('home', $params);
     }
 
     public function renderContact()
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 
     public function handlePost()
