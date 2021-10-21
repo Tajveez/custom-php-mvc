@@ -5,11 +5,11 @@ namespace app\controllers;
 use app\core\Controller;
 use app\core\Request;
 
-class ClassName extends Controller
+class AuthController extends Controller
 {
     public function login(Request $request)
     {
-        return $this->render('login');
+        return $this->render('auth/login');
     }
 
     public function register(Request $request)
