@@ -14,6 +14,9 @@ class ClassName extends Controller
 
     public function register(Request $request)
     {
+        if ($request->isPost()) {
+            return 'Handle submitted Data';
+        }
         return $this->render('register');
     }
 }

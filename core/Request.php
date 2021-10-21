@@ -21,6 +21,16 @@ class Request
         return strtolower($method);
     }
 
+    public function isGet()
+    {
+        return $this->method() === 'get';
+    }
+
+    public function isPost()
+    {
+        return $this->method() === 'post';
+    }
+
     public function getBodyParams()
     {
         $params = [];
