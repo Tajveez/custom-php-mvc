@@ -17,8 +17,10 @@ $app->router->post('/contact', [FrontController::class, 'handlePost']);
 
 // Auth controllers
 $app->router->get('/login', [AuthController::class, 'login']);
-$app->router->post('/login', [AuthController::class, 'login']);
 $app->router->get('/register', [AuthController::class, 'register']);
+
+// form submit post calls
+$app->router->post('/login', [AuthController::class, 'login']);
 $app->router->post('/register', [AuthController::class, 'register']);
 
 
