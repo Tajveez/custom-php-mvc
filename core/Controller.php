@@ -8,7 +8,7 @@ class Controller
 
     public function setLayout($layout)
     {
-        # code...
+        $this->layout = $layout;
     }
 
     public function render($view, $params = [])
