@@ -12,6 +12,7 @@ abstract class Model
             }
         }
     }
+    abstract function rules(): array;
 
     public function validate()
     {

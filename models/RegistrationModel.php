@@ -15,4 +15,10 @@ class RegistrationModel extends Model
     {
         # code...
     }
+
+    public function rules(): array
+    {
+        # code...
+        return [];
+    }
 }
