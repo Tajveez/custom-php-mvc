@@ -27,7 +27,8 @@ abstract class Model
             $value = $this->{$attribute};
             foreach ($rules as $rule) {
                 $ruleName = $rule;
-
+                
+                // setting all rules
                 if (!is_string($ruleName)) {
                     $ruleName = $rule[0];
                 }
