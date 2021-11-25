@@ -85,6 +85,6 @@ abstract class Model
 
     public function getFirstError($attr)
     {
-        return $this->errors[$attr] ?? false;
+        return $this->errors[$attr][0] ?? false;
     }
 }
