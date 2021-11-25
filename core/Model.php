@@ -27,7 +27,7 @@ abstract class Model
             $value = $this->{$attribute};
             foreach ($rules as $rule) {
                 $ruleName = $rule;
-                
+
                 // setting all rules
                 if (!is_string($ruleName)) {
                     $ruleName = $rule[0];
@@ -76,5 +76,15 @@ abstract class Model
             self::RULE_MIN => 'Min length of this field must be {min}',
             self::RULE_MAX => 'Max length of this field must be {max}',
         ];
+    }
+
+    public function hasError($attr)
+    {
+        return $this->errors[$attr] ?? false;
+    }
+
+    public function getFirstError($attr)
+    {
+        return $this->errors[$attr] ?? false;
     }
 }
