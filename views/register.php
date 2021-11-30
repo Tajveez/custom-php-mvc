@@ -20,7 +20,7 @@
         <label>Email</label>
         <input type="text" name="email" id="email" class="form-control">
     </div>
-
+    <!-- password -->
     <div class="form-group">
         <label>Password</label>
         <input type="password" name="passsword" id="passsword" class="form-control">
